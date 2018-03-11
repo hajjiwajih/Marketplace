@@ -9,7 +9,6 @@ import javax.persistence.*;
  *
  */
 @Entity
-
 public class Admin extends Users implements Serializable {
 	/***
 	 * le role de administrateur 

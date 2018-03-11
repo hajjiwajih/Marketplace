@@ -9,14 +9,22 @@ import javax.persistence.*;
  *
  */
 @Entity
-
 public class client extends Users implements Serializable {
 
+	private String walletID; 
 	
 	private static final long serialVersionUID = 1L;
 
 	public client() {
 		super();
+	}
+
+	public String getWalletID() {
+		return walletID;
+	}
+
+	public void setWalletID(String walletID) {
+		this.walletID = walletID;
 	}
    
 }

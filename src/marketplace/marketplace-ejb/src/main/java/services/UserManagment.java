@@ -19,7 +19,9 @@ public class UserManagment implements UserManagmentLocal {
 	@PersistenceContext
 	EntityManager em;
 	@EJB
-	Hashfunction hashfunction;
+	Email email;
+	@EJB
+	Hashfunction hashfunction; 
 
 	/**
 	 * Default constructor.
@@ -34,7 +36,13 @@ public class UserManagment implements UserManagmentLocal {
 	 * @throws NoSuchAlgorithmException 
 	 */
 	public String addUser(Users users)  {
-		users.setPassword(hashfunction.hash(users.getPassword()));
+		try {
+			users.setPassword(hashfunction.hash(users.getPassword()));
+		} catch (NoSuchAlgorithmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		email.send(users.getEmail(),"hello is me ","acount created");
 		em.persist(users);
 		return ("added");
 	}
@@ -42,4 +50,6 @@ public class UserManagment implements UserManagmentLocal {
 	{
 		return (em.find(Users.class, emailString));
 	}
+
+	
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/marketplace.iml" filepath="$PROJECT_DIR$/marketplace.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marketplace-ear/marketplace-ear.iml" filepath="$PROJECT_DIR$/marketplace-ear/marketplace-ear.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marketplace-ejb/marketplace-ejb.iml" filepath="$PROJECT_DIR$/marketplace-ejb/marketplace-ejb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/marketplace-web/marketplace-web.iml" filepath="$PROJECT_DIR$/marketplace-web/marketplace-web.iml" />
+    </modules>
+  </component>
+</project>

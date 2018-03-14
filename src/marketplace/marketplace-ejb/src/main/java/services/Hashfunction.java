@@ -1,7 +1,5 @@
 package services;
 
-import java.io.UnsupportedEncodingException;
-import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -17,13 +15,21 @@ public class Hashfunction {
 
 	/**
 	 * Default constructor.
+	 * @throws NoSuchAlgorithmException 
 	 */
-	public Hashfunction() {
+	public String hash(String passwordString) throws NoSuchAlgorithmException
+	{
+		 MessageDigest messageDigest = MessageDigest.getInstance("SHA-256");
+		passwordString="heder"+passwordString+"helloitme";
+		 messageDigest.update(passwordString.getBytes());
+		 String encryptedpassword = new String(messageDigest.digest());
+		return encryptedpassword;
+	}
+	 public Hashfunction() {
 		// TODO Auto-generated constructor stub
 	}
+	
 
-	public String hash(String passwordString)
-	{
-		return passwordString;
-	}
+	
+	
 }

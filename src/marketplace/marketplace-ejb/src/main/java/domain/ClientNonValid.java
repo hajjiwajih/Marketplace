@@ -4,12 +4,14 @@ import java.io.Serializable;
 import javax.persistence.*;
 
 /**
- * Entity implementation class for Entity: ClientNonValid
+ * Entity implementation class for Entity: Clientnonvalid
  *
  */
 @Entity
-public class ClientNonValid implements Serializable {
-	
+
+public class Clientnonvalid implements Serializable {
+	@Id
+	private String key;
 	private String email;
 	private String password; 
 	private String firstName;
@@ -17,14 +19,15 @@ public class ClientNonValid implements Serializable {
 	private int phoneNumber;
 	private String adress;
 	private boolean active;
-	@Id
-	private int  key;
 	
-	
-	
-	
+	public String getKey() {
+		return key;
+	}
 
-	
+	public void setKey(String key) {
+		this.key = key;
+	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -81,17 +84,9 @@ public class ClientNonValid implements Serializable {
 		this.active = active;
 	}
 
-	public int getKey() {
-		return key;
-	}
-
-	public void setKey(int key) {
-		this.key = key;
-	}
-
 	private static final long serialVersionUID = 1L;
 
-	public ClientNonValid() {
+	public Clientnonvalid() {
 		super();
 	}
    

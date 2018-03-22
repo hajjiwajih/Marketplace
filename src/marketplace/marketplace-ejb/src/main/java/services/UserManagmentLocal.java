@@ -5,8 +5,8 @@ import java.security.NoSuchAlgorithmException;
 
 import javax.ejb.Remote;
 
-import domain.Clientnonvalid;
 import domain.Users;
+import domain.tmpuser;
 
 @Remote
 public interface UserManagmentLocal {
@@ -15,8 +15,7 @@ public interface UserManagmentLocal {
 	 * @param clientNonValid
 	 * @return
 	 */
-	 public String registrationRequest(Clientnonvalid clientNonValid);
-	 public String registrationConfirmation(String keyString);
+	 public boolean registrationRequest(tmpuser tmpuser);
 	 public boolean isTemKey(String keyString);
 	 
 	/***
@@ -26,7 +25,7 @@ public interface UserManagmentLocal {
 	 * @throws NoSuchAlgorithmException 
 	 * @throws UnsupportedEncodingException 
 	 */
-	public String addUser(Users users) ;
+	public boolean addUser(Users users) ;
 	/**
 	 * 
 	 * rechertche user

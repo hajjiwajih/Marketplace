@@ -1,17 +1,19 @@
 package domain;
 
 import java.io.Serializable;
-import javax.persistence.*;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 /**
- * Entity implementation class for Entity: Clientnonvalid
+ * Entity implementation class for Entity: tmpuser
  *
  */
 @Entity
+public class tmpuser implements Serializable {
 
-public class Clientnonvalid implements Serializable {
 	@Id
-	private String key;
+	private String  privatekey;
 	private String email;
 	private String password; 
 	private String firstName;
@@ -19,13 +21,19 @@ public class Clientnonvalid implements Serializable {
 	private int phoneNumber;
 	private String adress;
 	private boolean active;
-	
-	public String getKey() {
-		return key;
+
+	private static final long serialVersionUID = 1L;
+
+	public tmpuser() {
+		super();
 	}
 
-	public void setKey(String key) {
-		this.key = key;
+	public String getPrivatekey() {
+		return privatekey;
+	}
+
+	public void setPrivatekey(String privatekey) {
+		this.privatekey = privatekey;
 	}
 
 	public String getEmail() {
@@ -84,10 +92,11 @@ public class Clientnonvalid implements Serializable {
 		this.active = active;
 	}
 
-	private static final long serialVersionUID = 1L;
-
-	public Clientnonvalid() {
-		super();
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
-   
+
+
+
+
 }

@@ -9,6 +9,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.validation.constraints.Null;
+import javax.xml.transform.Templates;
 
 import domain.Usernotconfirmed;
 import domain.Users;
@@ -54,18 +55,43 @@ public class UserManagment implements UserManagmentLocal {
 	@Override
 	public boolean registrationRequest(tmpuser tmpuser) {
 		String key = UUID.randomUUID().toString();
+		try {
+			tmpuser.setPassword(hashfunction.hash(tmpuser.getPassword()));
+		} catch (NoSuchAlgorithmException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		tmpuser.setPrivatekey(key);
+		email.send(tmpuser.getEmail(), "Please confirm",key );
 		em.persist(tmpuser);
 		return true; 
 		
 	}
 
 	@Override
-	public boolean isTemKey(String keyString) {
-		// TODO Auto-generated method stub
-		return false;
+	public boolean RegistrationConfirmation(String Key) {
+		tmpuser tmpuser=new tmpuser();
+		tmpuser=em.find(tmpuser.class, Key);
+		if (tmpuser!=null)
+		{
+			client client=new client();
+			client.setActive(true);
+			client.setAdress(tmpuser.getAdress());
+			client.setEmail(tmpuser.getEmail());
+			client.setFirstName(tmpuser.getFirstName());
+			client.setLastName(tmpuser.getLastName());
+			client.setPassword(tmpuser.getPassword());
+			client.setWalletID("stactic test");
+			email.send(client.getEmail(), "incription validated", "welcome to our service \n your wallet id id "+client.getWalletID());
+			em.persist(client);
+			return true;
+		}
+			
+			return false;
+			
 	}
 
+	
 	/***
 	 * insert into our temp data base user
 	 */

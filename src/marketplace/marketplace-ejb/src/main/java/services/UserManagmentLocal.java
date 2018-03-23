@@ -16,7 +16,7 @@ public interface UserManagmentLocal {
 	 * @return
 	 */
 	 public boolean registrationRequest(tmpuser tmpuser);
-	 public boolean isTemKey(String keyString);
+	 public boolean RegistrationConfirmation(String Key);
 	 
 	/***
 	 * add user 

@@ -33,6 +33,12 @@ public interface UserManagmentLocal {
 	 * @return user 
 	 */
 	public Users findUsers(String emailString);
+	/***
+	 * update users throw merge function
+	 * @param users
+	 * @return
+	 */
+	public boolean updateUser(Users users);
 	
 
 }

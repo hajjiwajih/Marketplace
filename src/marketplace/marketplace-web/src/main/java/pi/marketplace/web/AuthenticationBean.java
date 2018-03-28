@@ -66,7 +66,7 @@ public class AuthenticationBean implements Serializable {
 	{
 		String navigateTo = null;
 		if (keyin.equals(key))
-			 return navigateTo="welcome.jsf";
+			 return navigateTo="dashboard.jsf";
 		return navigateTo; 		
 	}
 

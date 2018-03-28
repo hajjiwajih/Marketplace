@@ -5,6 +5,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.UUID;
 
 import javax.ejb.EJB;
+import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -17,6 +18,7 @@ import domain.tmpuser;
  * Session Bean implementation class UserManagment
  */
 @Stateless
+@LocalBean
 public class UserManagment implements UserManagmentLocal {
 
 	@PersistenceContext
@@ -65,7 +67,8 @@ public class UserManagment implements UserManagmentLocal {
 			e.printStackTrace();
 		}
 		tmpuser.setPrivatekey(key);
-		email.send(tmpuser.getEmail(), "Please confirm", key);
+		email.send(tmpuser.getEmail(), "Market place registration",
+				"hello \n thank your for registratiion in our serverice \n In order to confirm your account please click on the link\n http://127.0.0.1:18080/marketplace-web/api/inscription/" + key);
 		em.persist(tmpuser);
 		return true;
 

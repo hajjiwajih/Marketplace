@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ejb-jar" name="marketplace-ejb:ejb">
+    <output-path>$PROJECT_DIR$/marketplace-ejb/target</output-path>
+    <root id="archive" name="marketplace-ejb.jar">
+      <element id="artifact" artifact-name="marketplace-ejb:ejb exploded" />
+    </root>
+  </artifact>
+</component>

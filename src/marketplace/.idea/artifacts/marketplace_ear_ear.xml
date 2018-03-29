@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="ear" name="marketplace-ear:ear">
+    <output-path>$PROJECT_DIR$/marketplace-ear/target</output-path>
+    <root id="archive" name="marketplace-ear.ear">
+      <element id="artifact" artifact-name="marketplace-ear:ear exploded" />
+    </root>
+  </artifact>
+</component>

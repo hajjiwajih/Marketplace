@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>update infromation</h:head>
+<body>
+	<p>email :</p>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputText value="Email" />
+			<h:inputText value="#{resgistration.email} " required="true" />
+			<h:outputText value="Password" />
+			<h:inputSecret value="#{resgistration.password}" required="true" />
+			<h:outputText value="firstName" />
+			<h:inputText value="#{resgistration.firstName}" required="true" />
+			<h:outputText value="lastName" />
+			<h:inputText value="#{resgistration.lastName}" required="true" />
+			<h:outputText value="phoneNumber" />
+			<h:inputText value="#{resgistration.phoneNumber}" required="true" />
+			<h:outputText value="adress" />
+			<h:inputText value="#{resgistration.adress}" required="true" />
+			<h:commandButton action="#{resgistration.register()}"
+				value="Register" />
+		</h:panelGrid>
+	</h:form>
+</body>
+</html>

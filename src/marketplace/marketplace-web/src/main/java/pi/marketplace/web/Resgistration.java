@@ -3,26 +3,44 @@ package pi.marketplace.web;
 import java.io.Serializable;
 
 import javax.ejb.EJB;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
 
 import domain.tmpuser;
 import services.UserManagmentLocal;
+
 @ManagedBean
 @SessionScoped
-public class Resgistration  implements Serializable{
+public class Resgistration implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	@EJB
 	UserManagmentLocal userManagmentLocal;
+
 	public Resgistration() {
 		// TODO Auto-generated constructor stub
 	}
-	private String email;
-	private String password; 
-	private String firstName;
-	private String lastName;
-	private int phoneNumber;
-	private String adress;
+
+	private String email = null;
+	private String password = null;
+	private String password2 = null;
+	private String firstName = null;
+	private String lastName = null;
+	private int phoneNumber = 0;
+	private String adress = null;
 	
+	public String getPassword2() {
+		return password2;
+	}
+
+	public void setPassword2(String password2) {
+		this.password2 = password2;
+	}
+
 	public String getEmail() {
 		return email;
 	}
@@ -71,18 +89,22 @@ public class Resgistration  implements Serializable{
 		this.adress = adress;
 	}
 
-	public String register()
-	{
-		tmpuser tmpuser= new tmpuser();
+	public String register() {
+		String navto=""; 
+		if (password.equals(password2)) {
+			tmpuser tmpuser = new tmpuser();
 			tmpuser.setAdress(adress);
 			tmpuser.setEmail(email);
 			tmpuser.setFirstName(firstName);
 			tmpuser.setLastName(lastName);
 			tmpuser.setPassword(password);
 			tmpuser.setPhoneNumber(phoneNumber);
-			userManagmentLocal.registrationRequest(tmpuser); 
-					
-		return "registersuccessfully";
+			userManagmentLocal.registrationRequest(tmpuser);
+			navto="registersuccessfully";
+		}
+		FacesMessage msg = new FacesMessage("bad credentials");
+		FacesContext.getCurrentInstance().addMessage("form_login:btn_login", msg);
+		return navto;
 		
 		
 	}

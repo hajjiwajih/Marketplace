@@ -7,12 +7,13 @@ import javax.faces.bean.SessionScoped;
 
 @ManagedBean
 @SessionScoped
-public class Updateinformation  implements Serializable{
+public class Usermanagment  implements Serializable{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	
 
 	
 }

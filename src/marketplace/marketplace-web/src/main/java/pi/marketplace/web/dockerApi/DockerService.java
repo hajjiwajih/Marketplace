@@ -5,9 +5,12 @@ import java.util.List;
 
 import com.github.dockerjava.api.DockerClient;
 import com.github.dockerjava.api.model.Container;
+import com.github.dockerjava.api.model.Image;
 
+//@Path("/ServiceDocker")
 public class DockerService {
 	private static List<Container> containers= new ArrayList<Container>() ;
+	private static List<Image> images =  new ArrayList<Image>() ;
 	//private String CId;
 	 public static List<Container> getContainers() {
 		return containers;
@@ -16,7 +19,11 @@ public class DockerService {
 	public static void setContainers(List<Container> containers) {
 		DockerService.containers = containers;
 	}
-
+	
+	
+	/*@GET
+	@Path("/Containers")
+	@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })*/
 	public static void getAllContainers(){
 
 	        DockerController dockerController = new DockerController();
@@ -26,7 +33,14 @@ public class DockerService {
 	                .withShowAll(true)
 	                .withStatusFilter("exited").exec();
 	        for (Container c : containers) {
-	            System.out.printf("*****************"+c.getId()+"*************************");
+	        	System.out.printf("==================================================================");
+	            System.out.printf("ID :"+c.getId());
+	            System.out.printf("NOM :"+c.getNames());
+	            System.out.printf("Statut :"+c.getStatus());
+	            System.out.printf("HostConfig :"+c.getHostConfig());
+	            System.out.printf("NetworkSettings"+c.getNetworkSettings());
+	            System.out.printf("Port"+c.getPorts());
+	            System.out.printf("==================================================================");
 	        }
 
 	    }
@@ -42,17 +56,27 @@ public class DockerService {
 		    .withBinds(Bind.parse("/Users/baeldung/mongo/data/db:/data/db")).exec();
 
 	 }*/
+	
+	/*
+	  @POST
+	  @Path("/startContainer")
+	  @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })*/
 	 public static void StartContainer(String Id)
 	 {
 		 DockerController dockerController = new DockerController();
 	        DockerClient client = dockerController.initDocker();
 	        for (Container c : containers) {
 	        	if(c.getId()==Id)
+	        	{
 	        client.startContainerCmd(c.getId()).exec();
 	            System.out.printf("Container with id:"+c.getId()+"has been started");
-
+	        	}
 	}	
 	 }
+	  /*
+	  @POST
+	  @Path("/stopContainer")
+	  @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })*/ 
 	 public static void StopContainer(String Id)
 	 {
 		 DockerController dockerController = new DockerController();
@@ -65,7 +89,10 @@ public class DockerService {
 	        	}
 	        }
 	}	
-	 
+	 /*
+	 @POST
+	 @Path("/removeContainer")
+	 @Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })*/
 	 public static void RemoveContainer(String Id)
 	 {
 		 DockerController dockerController = new DockerController();
@@ -78,6 +105,9 @@ public class DockerService {
 
 	        	}
 	}
+	        
+	        
+	        
 	 }
 	 
 	/* public static void InspectContainer()
@@ -90,6 +120,29 @@ public class DockerService {
 	        }
 	 }*/
 	 
+	/*@GET
+	@Path("/images")
+	@Consumes({ MediaType.APPLICATION_JSON, MediaType.APPLICATION_XML })*/ 
+	 public void listerImage()
+		{
+		 DockerController dockerController = new DockerController();
+	        DockerClient client = dockerController.initDocker();
+			List<Image> images = client.listImagesCmd().exec();
+			 for (Image i : images) {
+		            System.out.printf("id"+i.getId()+" temp de création :"+i.getCreated()+" size :"+i.getSize()+" tag:"
+		            +i.getRepoTags());
+		}}
+	 
+	 
+	 
+
+	public static List<Image> getImages() {
+		return images;
+	}
+
+	public static void setImages(List<Image> images) {
+		DockerService.images = images;
+	}
 	 
 	 
 	

@@ -103,7 +103,7 @@ public class Resgistration implements Serializable {
 			navto="registersuccessfully";
 		}
 		FacesMessage msg = new FacesMessage("bad credentials");
-		FacesContext.getCurrentInstance().addMessage("form_login:btn_login", msg);
+		FacesContext.getCurrentInstance().addMessage("from_registration:btn_register", msg);
 		return navto;
 		
 		

@@ -4,17 +4,20 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
 
-<h:head> login page</h:head>
+<h:head> 
+<title>authentication</title>
+login page</h:head>
 <body>
 	<p>Please enter your credial to login</p>
 	<h:form>
 		<h:panelGrid columns="2">
 		<h:outputText value="Email" />
-		<h:inputText value="#{authenticationBean.emaiString}" />
-		<h:outputText value="Password" />
-		<h:inputSecret value="#{authenticationBean.passString}" /> 
-		<h:commandButton action="#{authenticationBean.Login()}" value="login" />
-
+			<h:inputText value="#{usermanagment.emailString}" required="true" size="20"
+				maxlength="60" />
+			<h:outputText value="Password" />
+			<h:inputSecret value="#{usermanagment.passwordStrin}" />
+			<h:outputText value="Retype Password" />
+		<h:commandButton action="#{usermanagment.login()}" value="login" />
 		</h:panelGrid>
 	</h:form>
 

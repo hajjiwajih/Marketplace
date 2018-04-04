@@ -55,12 +55,13 @@ public class AuthenticationBean implements Serializable {
 	}
 
 	public String Login() {
-		String navigateTo = null;
-		key = authen.firststep(emaiString, passString);
-		if (key != null) {
-			navigateTo = "secondFactor.jsf";
-		}
-		return navigateTo;
+//		String navigateTo = null;
+//		key = authen.firststep(emaiString, passString);
+//		if (key != null) {
+//			navigateTo = "secondFactor.jsf";
+//		}
+//		return navigateTo;
+		 return "/pages/secondfactor.jsf?faces-redirect=true";
 	}
 	public String secondfactor()
 	{

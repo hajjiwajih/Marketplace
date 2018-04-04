@@ -32,24 +32,23 @@ public class Authentication implements AuthenticationRemote {
 	}
 
 	public String firststep(String emailString, String passString) {
-		 Users users =new Users();
-		String key=null ;
-		 users=em.find(Users.class, email);
-		 if (users!=null)
-		 {
-			 try {
-				if (hashfunction.hash(passString).equals(users.getPassword()));
+		Users users = new Users();
+		String key = null;
+		users = em.find(Users.class, emailString);
+		if (users != null) {
+			try {
+				if (hashfunction.hash(passString).equals(users.getPassword()))
+					;
+				System.out.println("4");
 				key = UUID.randomUUID().toString();
-				email.send(users.getEmail(), "second factor\n", "please enter this key to login\n "+key);
+				email.send(users.getEmail(), "second factor\n", "please enter this key to login\n " + key);
 			} catch (NoSuchAlgorithmException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			 return key;
-		 }
+			return key;
+		}
 		return key;
 	}
-
-	
 
 }

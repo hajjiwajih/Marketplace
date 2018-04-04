@@ -8,5 +8,8 @@
         <dependent-module archiveName="marketplace-ejb.jar" deploy-path="/" handle="module:/resource/marketplace-ejb/marketplace-ejb">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="json.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/json/json/20180130/json-20180130.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>

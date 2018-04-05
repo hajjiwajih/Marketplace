@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+	<head>
+  
+<meta charset="utf-8" />
+  
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+<meta name="description" content="" />
+  
+<meta name="author" content="" />
+  
+<title>Cataloge</title>
+  <link href="resources/catalog/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="resources/catalog/css/animate.min.css" rel="stylesheet" /> 
+  <link href="resources/catalog/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="resources/catalog/css/lightbox.css" rel="stylesheet" />
+  <link href="resources/catalog/css/main.css" rel="stylesheet" />
+  <link id="css-preset" href="resources/catalog/css/presets/preset1.css" rel="stylesheet" />
+  <link href="resources/catalog/css/responsive.css" rel="stylesheet" /> 
+
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+  <![endif]-->
+  
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="resources/catalog/images/favicon.ico" /></head><!--/head-->
+
+<body>
+  <header>
+   
+<div class="main-nav">
+    
+<div class="container">
+      
+<div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar" />
+          <span class="icon-bar" />
+          <span class="icon-bar" />
+        </button>
+        <a class="navbar-brand" href="index.html">
+          
+<h1><img class="img-responsive" src="resources/catalog/images/logo.png" alt="logo" /></h1>
+        </a>                    
+      </div>
+      
+<div class="collapse navbar-collapse">
+        
+<ul class="nav navbar-nav navbar-right">                 
+          
+<li class="scroll active"><a href="#home">Home</a></li>
+          
+<li class="scroll"><a href="#services">Service</a></li> 
+          
+<li class="scroll"><a href="#about-us">About Us</a></li>                     
+          <!-- <li class="scroll"><a href="#portfolio">Portfolio</a></li>-->
+          
+<li class="scroll"><a href="#team">Team</a></li>
+          <!--<li class="scroll"><a href="#blog">Blog</a></li>-->
+          
+<li class="scroll"><a href="#contact">Contact</a></li>  
+          
+<li class="scroll"><a href="login.html">Logout</a></li>      
+        </ul>
+      </div>
+    </div>
+  </div><!--/#main-nav--></header><!--/#home--><section id="services">
+  
+<div class="container">
+    
+<div class="heading wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      
+<div class="row">
+        
+<div class="text-center col-sm-8 col-sm-offset-2">
+          
+<h2>Our Products</h2>
+          
+<p>we provide you with the features your business needs</p>
+        </div>
+      </div> 
+    </div>
+    
+<div class="text-center our-services">
+      
+<div class="row">
+        
+<div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+          
+<div class="service-icon">
+            <i class="fa fa-apple" />
+          </div>
+          
+<div class="service-info">
+            
+<h3>Mac OS</h3>
+            
+<p>Mac OS X 10.7,Mac OS X 10.11</p>
+            <center>
+             <!-- <table><tr>
+               <td style="padding:2px"> <label>OS :</label></td>
+                <td>
+                  <select name="os">
+                <option value="Ubuntu">Mac OS X 10.7</option>
+                <option value="Centos">Mac OS X 10.11</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+               <td style="padding:2px"> <label>MEMORY :</label></td>
+                <td>
+                  <select name="os">
+                <option value="M1">1GB</option>
+                <option value="M2">4GB</option>
+                <option value="M3">8GB</option>
+                <option value="M4">64GB</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+               <td style="padding:2px"> <label>vCPU :</label></td>
+                <td>
+                  <select name="vCPU">
+                <option value="1CPU">1</option>
+                <option value="2CPU">2</option>
+                <option value="1CPU">4</option>
+                <option value="2CPU">16</option>
+              </select>
+            </td>
+          </tr>
+              
+              </table>-->
+             <label>OS :</label>
+              <select name="os">
+                
+<option value="Ubuntu">Mac OS X 10.7</option>
+                
+<option value="Centos">Mac OS X 10.11</option>
+              </select>
+              <br />
+                <label>MEMORY :</label>
+              <select name="os">
+                
+<option value="M1">1GB</option>
+                
+<option value="M2">4GB</option>
+                
+<option value="M3">8GB</option>
+                
+<option value="M4">64GB</option>
+              </select>
+              <br />
+              <label>vCPU :</label>
+              <select name="vCPU">
+                
+<option value="1CPU">1</option>
+                
+<option value="2CPU">2</option>
+                
+<option value="1CPU">4</option>
+                
+<option value="2CPU">16</option>
+              </select><br /> 
+              <label>Storage:</label>
+              <select name="vCPU">
+                
+<option value="1CPU">25GB</option>
+                
+<option value="2CPU">80GB</option>
+                
+<option value="1CPU">160GB</option>
+                
+<option value="2CPU">1280GB</option>
+              </select>
+            </center>
+            <br /><br />
+            <a class="btn btn-lg btn-primary" href="#">Command</a>
+          </div>
+        </div>
+        
+<div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="450ms">
+          
+<div class="service-icon">
+            <i class="fa fa-windows" />
+          </div>
+          
+<div class="service-info">
+            
+<h3>Windows</h3>
+            
+<p>windows7,windows8,windows10</p>
+            <center>
+              <label>OS :</label>
+              <select name="os">
+                
+<option value="Ubuntu">windows7</option>
+                
+<option value="Centos">windows8</option>
+                
+<option value="Fedora">windows10</option>
+              </select>
+              <br />
+               <label>MEMORY :</label>
+              <select name="os">
+                
+<option value="M1">1GB</option>
+                
+<option value="M2">4GB</option>
+                
+<option value="M3">8GB</option>
+                
+<option value="M4">64GB</option>
+              </select>
+              <br />
+              <label>vCPU :</label>
+              <select name="vCPU">
+                
+<option value="1CPU">1</option>
+                
+<option value="2CPU">2</option>
+                
+<option value="1CPU">4</option>
+                
+<option value="2CPU">16</option>
+              </select><br /> 
+              <label>Storage:</label>
+              <select name="vCPU">
+                
+<option value="1CPU">25GB</option>
+                
+<option value="2CPU">80GB</option>
+                
+<option value="1CPU">160GB</option>
+                
+<option value="2CPU">1280GB</option>
+              </select>
+            </center>
+            <br /><br />
+            <a class="btn btn-lg btn-primary" href="#">Command</a>
+          </div>
+        </div>
+        
+<div class="col-sm-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="550ms">
+          
+<div class="service-icon">
+            <i class="fa fa-linux" />
+          </div>
+          
+<div class="service-info">
+            
+<h3>Linux</h3>
+            
+<p>Ubuntu,Centos,Fedora</p>
+            <center>
+              <label>OS :</label>
+              <select name="os">
+                
+<option value="Ubuntu">Ubuntu</option>
+                
+<option value="Centos">Centos</option>
+                
+<option value="Fedora">Fedora</option>
+              </select>
+              <br />
+               <label>MEMORY :</label>
+              <select name="os">
+                
+<option value="M1">1GB</option>
+                
+<option value="M2">4GB</option>
+                
+<option value="M3">8GB</option>
+                
+<option value="M4">64GB</option>
+              </select>
+              <br />
+              <label>vCPU :</label>
+              <select name="vCPU">
+                
+<option value="1CPU">1</option>
+                
+<option value="2CPU">2</option>
+                
+<option value="1CPU">4</option>
+                
+<option value="2CPU">16</option>
+              </select><br /> 
+              <label>Storage:</label>
+              <select name="vCPU">
+                
+<option value="1CPU">25GB</option>
+                
+<option value="2CPU">80GB</option>
+                
+<option value="1CPU">160GB</option>
+                
+<option value="2CPU">1280GB</option>
+              </select>
+            </center>
+            <br /><br />
+            <a class="btn btn-lg btn-primary" href="#">Command</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section><!--/#services-->
+  <!--<section id="services">
+   <center>
+    <label>vCPU :</label>
+    <select name="vCPU">
+      <option value="1CPU">1</option>
+      <option value="2CPU">2</option>
+      <option value="1CPU">4</option>
+      <option value="2CPU">16</option>
+    </select></center>
+  </section>-->
+  <!--<section id="system">
+    <div>
+    <ul class='dropdown'>
+         <li id="top"><a href='index.html'>Dropdown</a>
+          <span></span>
+            <ul class="dropdown-box">
+               <li><a href='#'>Ubuntu</a></li>
+               <li><a href='#'>Fedora</a></li>
+               <li><a href='#'>CentOS</a></li>
+               <li><a href='#'>Windows</a></li>
+               <li><a href='#'>redHat</a></li>
+            </ul>
+         </li>
+      </ul>
+    </div>-->  
+    
+  
+  <footer id="footer">
+    
+<div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
+      
+<div class="container text-center">
+        
+<div class="footer-logo">
+          <a href="index.html"><img class="img-responsive" src="resources/catalog/images/logo.png" alt="" /></a>
+        </div>
+        
+<div class="social-icons">
+          
+<ul>
+            <!--<li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li> 
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>-->
+            
+<li><a class="facebook" href="#"><i class="fa fa-facebook" /></a></li>
+            
+<li><a class="linkedin" href="#"><i class="fa fa-linkedin" /></a></li>
+            <!--<li><a class="tumblr" href="#"><i class="fa fa-tumblr-square"></i></a></li>-->
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+<div class="footer-bottom">
+      
+<div class="container">
+        
+<div class="row">
+          
+<div class="col-sm-6">
+            
+<p>© 2018 Marketplace - All rights reserved.</p>
+          </div>
+          
+<div class="col-sm-6">
+            
+<p class="pull-right">Developed by <a href="#">Hawk Team</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

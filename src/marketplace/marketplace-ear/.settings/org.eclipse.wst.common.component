@@ -11,5 +11,230 @@
         <dependent-module archiveName="json.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/json/json/20180130/json-20180130.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="maven-dependency-plugin.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/plugins/maven-dependency-plugin/3.0.2/maven-dependency-plugin-3.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-artifact.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-artifact/3.0/maven-artifact-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-plugin-api.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-plugin-api/3.0/maven-plugin-api-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sisu-inject-plexus.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/sisu/sisu-inject-plexus/1.4.2/sisu-inject-plexus-1.4.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sisu-inject-bean.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/sisu/sisu-inject-bean/1.4.2/sisu-inject-bean-1.4.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sisu-guice-noaop.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/sisu/sisu-guice/2.1.7/sisu-guice-2.1.7-noaop.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-model.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-model/3.0/maven-model-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-core.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-core/3.0/maven-core-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-settings.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-settings/3.0/maven-settings-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-settings-builder.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-settings-builder/3.0/maven-settings-builder-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-model-builder.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-model-builder/3.0/maven-model-builder-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-aether-provider.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-aether-provider/3.0/maven-aether-provider-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aether-impl.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/aether/aether-impl/1.7/aether-impl-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aether-spi.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/aether/aether-spi/1.7/aether-spi-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aether-api.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/aether/aether-api/1.7/aether-api-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aether-util.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/aether/aether-util/1.7/aether-util-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-interpolation.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-interpolation/1.14/plexus-interpolation-1.14.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-classworlds.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-classworlds/2.2.3/plexus-classworlds-2.2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-component-annotations.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-component-annotations/1.5.5/plexus-component-annotations-1.5.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-sec-dispatcher.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-cipher.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-repository-metadata.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/maven-repository-metadata/3.0/maven-repository-metadata-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-reporting-api.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/reporting/maven-reporting-api/3.0/maven-reporting-api-3.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-reporting-impl.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/reporting/maven-reporting-impl/2.3/maven-reporting-impl-2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-core.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/doxia/doxia-core/1.2/doxia-core-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xercesImpl.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xml-apis.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/xml-apis/xml-apis/1.3.04/xml-apis-1.3.04.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpclient.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/httpclient/4.0.2/httpclient-4.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="httpcore.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-validator.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-validator/commons-validator/1.3.1/commons-validator-1.3.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-beanutils.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-digester.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-digester/commons-digester/1.6/commons-digester-1.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-io/commons-io/2.5/commons-io-2.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-sink-api.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/doxia/doxia-sink-api/1.4/doxia-sink-api-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-logging-api.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/doxia/doxia-logging-api/1.4/doxia-logging-api-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-site-renderer.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/doxia/doxia-site-renderer/1.4/doxia-site-renderer-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-decoration-model.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/doxia/doxia-decoration-model/1.4/doxia-decoration-model-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-module-xhtml.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/doxia/doxia-module-xhtml/1.4/doxia-module-xhtml-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="doxia-module-fml.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/doxia/doxia-module-fml/1.4/doxia-module-fml-1.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-i18n.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-i18n/1.0-beta-7/plexus-i18n-1.0-beta-7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-container-default.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-container-default/1.0-alpha-30/plexus-container-default-1.0-alpha-30.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="junit.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/junit/junit/3.8.1/junit-3.8.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-velocity.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-velocity/1.1.7/plexus-velocity-1.1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="velocity.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/velocity/velocity/1.5/velocity-1.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="oro.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/oro/oro/2.0.8/oro-2.0.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="velocity-tools.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/velocity/velocity-tools/2.0/velocity-tools-2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-chain.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-chain/commons-chain/1.1/commons-chain-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="dom4j.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/dom4j/dom4j/1.1/dom4j-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="sslext.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/sslext/sslext/1.2-0/sslext-1.2-0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="struts-core.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/struts/struts-core/1.3.8/struts-core-1.3.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="antlr.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/antlr/antlr/2.7.2/antlr-2.7.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="struts-taglib.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/struts/struts-taglib/1.3.8/struts-taglib-1.3.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="struts-tiles.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/struts/struts-tiles/1.3.8/struts-tiles-1.3.8.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-archiver.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-archiver/3.4/plexus-archiver-3.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-compress.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/commons/commons-compress/1.11/commons-compress-1.11.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="snappy.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/iq80/snappy/snappy/0.4/snappy-0.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="xz.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/tukaani/xz/1.5/xz-1.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-utils.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-utils/3.0.24/plexus-utils-3.0.24.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="file-management.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/shared/file-management/1.2.1/file-management-1.2.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-shared-io.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/shared/maven-shared-io/1.1/maven-shared-io-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="wagon-provider-api.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/wagon/wagon-provider-api/1.0-alpha-6/wagon-provider-api-1.0-alpha-6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="plexus-io.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/codehaus/plexus/plexus-io/2.4/plexus-io-2.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-dependency-analyzer.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/shared/maven-dependency-analyzer/1.7/maven-dependency-analyzer-1.7.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/ow2/asm/asm/5.0.2/asm-5.0.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-dependency-tree.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/shared/maven-dependency-tree/3.0.1/maven-dependency-tree-3.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="aether-util.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/eclipse/aether/aether-util/0.9.0.M2/aether-util-0.9.0.M2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-common-artifact-filters.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/shared/maven-common-artifact-filters/3.0.1/maven-common-artifact-filters-3.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-artifact-transfer.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/shared/maven-artifact-transfer/0.9.1/maven-artifact-transfer-0.9.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-codec.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-codec/commons-codec/1.6/commons-codec-1.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="slf4j-api.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/slf4j/slf4j-api/1.7.5/slf4j-api-1.7.5.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="maven-shared-utils.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/org/apache/maven/shared/maven-shared-utils/3.2.0/maven-shared-utils-3.2.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-lang.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-lang/commons-lang/2.6/commons-lang-2.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-collections.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="classworlds.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/classworlds/classworlds/1.1/classworlds-1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>

@@ -1,12 +1,11 @@
 package services;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-
 import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+
+import domain.Transaction;
 
 /**
  * Session Bean implementation class Payment
@@ -14,43 +13,28 @@ import javax.persistence.PersistenceContext;
 @Stateless
 @LocalBean
 public class Payment implements PaymentLocal {
-	
+
 	@PersistenceContext
 	EntityManager em;
-	
-	
-    /**
-     * Default constructor. 
-     */
-    public Payment() {
-        // TODO Auto-generated constructor stub
-    }
 
+	/**
+	 * Default constructor.
+	 */
+	public Payment() {
+		// TODO Auto-generated constructor stub
+	}
+ 
 	@Override
-	public float getcurentsold(String walletidString) {
-		// TODO Auto-generated method stub
-		return 0;
+	public String Add_trasaction(Transaction transaction) {
+		em.persist(transaction);
+		return "added";
 	}
 
 	@Override
-	public boolean payout(String walletidString, float value) {
-		// TODO Auto-generated method stub
+	public Boolean findTransaction(String hashString) {
+		if(em.find(Transaction.class, hashString) != null)
+			return true;
 		return false;
-	}
-
-	@Override
-	public String Add_trasaction(String hachString) {
-		
-		try {
-			URL url= new URL("https://dogechain.info/api/v1/transaction/"+hachString);
-			
-		} catch (MalformedURLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-	
-		return null;
 	}
 
 }

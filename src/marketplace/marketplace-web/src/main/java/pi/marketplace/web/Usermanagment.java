@@ -42,13 +42,15 @@ public class Usermanagment  implements Serializable{
 	}
 	public String login(){
 		keygenerated=authentication.firststep(emailString, passwordStrin);
-		if (keygenerated!=null)			
-			return "secondfactor";
-		return "";
+		if (keygenerated!=null)
+			{System.out.println(keygenerated);
+			return "secondFactor.jsf";
+			}
+		return "error.jsf";
 	}
 	public String Second(){
 		if (key.equals(keygenerated))
-			return ("dashboard");
+			return ("dashboard.jsf");
 		return "";
 	}
 	

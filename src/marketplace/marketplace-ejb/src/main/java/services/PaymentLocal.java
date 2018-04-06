@@ -2,10 +2,11 @@ package services;
 
 import javax.ejb.Local;
 
+import domain.Transaction;
+
 @Local
 public interface PaymentLocal {
 
-	float getcurentsold(String walletidString);
-	boolean payout(String walletidString, float value);
-	 String Add_trasaction(String hachString);
-}
+	String Add_trasaction(Transaction transaction);
+	Boolean findTransaction(String hashString);
+}	

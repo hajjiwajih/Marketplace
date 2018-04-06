@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>Resgistration request
+	<title>Regiser</title>
+</h:head>
+<body>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputText value="Email" />
+			<h:inputText value="#{resgistration.email}" required="true" size="20"
+				maxlength="60" />
+			<h:outputText value="Password" />
+			<h:inputSecret value="#{resgistration.password}" />
+			<h:outputText value="Retype Password" />
+			<h:inputSecret value="#{resgistration.password2}" />
+			<h:outputText value="firstName" />
+			<h:inputText value="#{resgistration.firstName}" />
+			<h:outputText value="lastName" />
+			<h:inputText value="#{resgistration.lastName}" />
+			<h:outputText value="phoneNumber" />
+			<h:inputText value="#{resgistration.phoneNumber}" />
+			<h:outputText value="adress" />
+			<h:inputText value="#{resgistration.adress}" />
+			<h:commandButton id="btn_register" action="#{resgistration.register()}"
+				value="Register" />
+			<h:message for="btn_register"/>
+		</h:panelGrid>
+	</h:form>
+</body>
+</html>

@@ -1,17 +1,27 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html"> 
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
 
-<h:head>payment validation</h:head> 
-<body> 
-<h:form>
-		<h:panelGrid columns="2">
-		<h:outputText value="hash" />
-			<h:inputText value="#{transaction.hash}" />
-		<h:commandButton action="#{transaction.hashverif()}" value="verif" />
+<h:head>
+<title>Payment validation</title>
+</h:head>
+<body>
+<p align="center" style="color: blue;">Please enter the hash of the transaction to validate the payment</p>
+	<div align="center" style="background-color: buttonhighlight;">
+	<h:form>
+		<h:panelGrid columns="3">
+			<h:outputText value="hash" />
+			<h:inputText id="transactionid" value="#{transaction.hash}"
+				required="true" requiredMessage="please enter a hash"
+				validatorMessage="please enter a valid hash ">
+				<f:validateLength minimum="64" maximum="64"></f:validateLength>
+			</h:inputText>
+			<h:commandButton action="#{transaction.hashverif()}" value="verif" />
+			<h:message for="transactionid" />
 		</h:panelGrid>
 	</h:form>
-</body> 
+	</div>
+</body>
 </html>

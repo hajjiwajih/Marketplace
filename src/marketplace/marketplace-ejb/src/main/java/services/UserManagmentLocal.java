@@ -39,6 +39,26 @@ public interface UserManagmentLocal {
 	 * @return
 	 */
 	public boolean updateUser(Users users);
+	/***
+	 * verifier if it is a user
+	 * @param emailString
+	 * @return true if a user
+	 * @return false if not a user 
+	 */
+	public boolean isUser(String emailString);
+	/***
+	 * change password of a user
+	 * @param email
+	 * @param password
+	 * @return
+	 */
+	public boolean updatepassword(String email, String password );
+	/***
+	 * Send  a token to user in order to recover his password
+	 * @param emailString
+	 * @return token send to email 
+	 */
+	public String sendtoken(String emailString);
 	
 
 }

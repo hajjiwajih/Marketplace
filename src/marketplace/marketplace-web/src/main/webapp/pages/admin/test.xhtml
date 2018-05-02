@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" 
+	xmlns:h="http://java.sun.com/jsf/html" 
+	xmlns:f="http://xmlns.jcp.org/jsf/core">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<link rel="stylesheet" href="stylecss.css" type="text/css" />
+	
+</head>
+<body>
+	
+<h:head>
+
+    <title>MarketPlace</title>
+    <style type="text/css">
+        .tableUpdated {
+        	width: 90% !important;
+        	margin: 17px 58px 0 !important;
+        }
+        .btnSpace {
+        	margin: 17px;
+        }     
+    </style>
+</h:head>
+<h:body>
+    <center><h2><h:outputText value="Image Management"/></h2></center>
+    <h:form id="ImageForm">
+        <h:dataTable id="image" binding="#{table}" value="#{localimagesManagmentBean.images}" var="img" class="table table-striped table-hover table-bordered tableUpdated">
+            <h:column>
+                <f:facet name="header">Id</f:facet>
+                <h:outputText value="#{table.rowIndex + 1}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">name</f:facet>
+                <h:outputText value="#{img.name}" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">description</f:facet>
+                <h:outputText value="#{img.description}" />
+            </h:column>
+           
+            <h:column>
+                <f:facet name="header">Update</f:facet>
+                <h:commandButton action="#{localimagesManagmentBean.UpdateImage(image)}" value="Update" class="btn btn-primary" />
+            </h:column>
+            <h:column>
+                <f:facet name="header">Delete</f:facet>
+                <h:commandButton action="#{localimagesManagmentBean.DeleteImage(image)}" value="Delete" class="btn btn-danger" />
+            </h:column>
+        </h:dataTable>
+        <center>
+            <h:commandButton action="addImage.xhtml?faces-redirect=true" value="Create New Image" class="btn btn-success btnSpace" />
+        </center>
+    </h:form>
+</h:body>
+
+</body>
+</html>

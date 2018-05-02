@@ -4,22 +4,32 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
 
-<h:head> 
-<title>authentication</title>
-login page</h:head>
-<body>
-	<p>Please enter your credial to login</p>
-	<h:form>
-		<h:panelGrid columns="2">
-		<h:outputText value="Email" />
-			<h:inputText value="#{usermanagment.emailString}" required="true" size="20"
-				maxlength="60" />
-			<h:outputText value="Password" />
-			<h:inputSecret value="#{usermanagment.passwordStrin}" />
-			<h:outputText value="Retype Password" />
-		<h:commandButton action="#{usermanagment.login()}" value="login" />
-		</h:panelGrid>
-	</h:form>
+<h:head>
+	<title>authentication</title>
 
-</body>
+</h:head>
+<body>
+	<p align="center" style="color: blue;">Please enter your credial to
+		login</p>
+	<div align="center" style="background-color: buttonhighlight;">
+		<h:form class="form-horizontal">
+			<h:panelGrid columns="3">
+				<h:outputText value="email" />
+				<h:inputText id="em" value="#{usermanagment.emailString}"
+					required="true" requiredMessage="Please enter a valid email"></h:inputText>
+				<h:message for="em" />
+				<h:outputText value="Password" />
+				<h:inputSecret id="ps" value="#{usermanagment.passwordStrin}" required="true" requiredMessage="Please enter the passsword"></h:inputSecret>
+				<h:message for="ps" />
+				<div align="center" >
+					<h:commandButton id="login" action="#{usermanagment.login()}"
+						value="login"></h:commandButton>
+				</div>
+				<div align="center" style="color: red;">
+					<h:message for="login" />
+				</div>
+			</h:panelGrid>
+		</h:form>
+	</div>
+  </body>
 </html>

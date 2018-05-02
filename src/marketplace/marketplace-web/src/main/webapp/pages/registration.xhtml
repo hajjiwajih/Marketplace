@@ -4,31 +4,51 @@
 	xmlns:f="http://java.sun.com/jsf/core"
 	xmlns:h="http://java.sun.com/jsf/html">
 
-<h:head>Resgistration request
+
+<h:head>
 	<title>Register</title>
 </h:head>
 <body>
-	<h:form>
-		<h:panelGrid columns="2">
-			<h:outputText value="Email" />
-			<h:inputText value="#{resgistration.email}" required="true" size="20"
-				maxlength="60" />
-			<h:outputText value="Password" />
-			<h:inputSecret value="#{resgistration.password}" />
+<p align="center" style="color: blue;">Please enter your information in order to register</p>
+<div align="center" style="background-color: buttonhighlight;">
+	<h:form id="registration">
+		<h:panelGrid columns="3">
+			<h:outputText value="Email" styleClass="form-horizontal" />
+			<h:inputText id="email" value="#{resgistration.email}"
+				required="true" requiredMessage="Please enter a valid email">
+			</h:inputText>
+			<h:message for="email" />
+			<h:outputText value="Password" styleClass="form-horizontal" />
+			<h:inputSecret id="password" value="#{resgistration.password}"
+				required="true" requiredMessage="Please enter a valid password" />
+			<h:message for="password" />
 			<h:outputText value="Retype Password" />
-			<h:inputSecret value="#{resgistration.password2}" />
-			<h:outputText value="firstName" />
-			<h:inputText value="#{resgistration.firstName}" />
+			<h:inputSecret id="pass2" value="#{resgistration.password2}"
+				required="true" requiredMessage="please retype the same password" />
+			<h:message for="pass2" />
+			<h:outputText value="FirstName" />
+			<h:inputText id="firstname" value="#{resgistration.firstName}"
+				required="true" requiredMessage="please enter a valid firstname" />
+			<h:message for="firstname" />
 			<h:outputText value="lastName" />
-			<h:inputText value="#{resgistration.lastName}" />
+			<h:inputText id="Lastname" value="#{resgistration.lastName}"
+				required="true" requiredMessage="please enter a valid lastname" />
+			<h:message for="Lastname" />
 			<h:outputText value="phoneNumber" />
-			<h:inputText value="#{resgistration.phoneNumber}" />
+			<h:inputText id="Phonenumber" value="#{resgistration.phoneNumber}"
+				required="true" validatorMessage="please enter a valid phone number">
+				<f:validateDoubleRange minimum="20000000" maximum="99999999"></f:validateDoubleRange>
+			</h:inputText>
+			<h:message for="Phonenumber" />
 			<h:outputText value="adress" />
-			<h:inputText value="#{resgistration.adress}" />
-			<h:commandButton id="btn_register" action="#{resgistration.register()}"
-				value="Register" />
-			<h:message for="btn_register"/>
+			<h:inputText id="Adress" value="#{resgistration.adress}"
+				required="true" requiredMessage="Please enter a valid adress" />
+			<h:message for="Adress" />
+			<h:commandButton id="btn_register"
+				action="#{resgistration.register()}" value="Register" />
+			<h:message for="btn_register" />
 		</h:panelGrid>
 	</h:form>
+	</div>
 </body>
 </html>

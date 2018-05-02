@@ -1,0 +1,309 @@
+src/main/java/pi/marketplace/web/PasswordRecovery.java:13:	Each class should declare at least one constructor
+src/main/java/pi/marketplace/web/PasswordRecovery.java:13:	headerCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:16:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:16:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:22:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:23:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:24:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:25:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:26:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:28:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:32:	Parameter 'pass1' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/PasswordRecovery.java:32:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:36:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:40:	Parameter 'pass2' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/PasswordRecovery.java:40:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:44:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:47:	Avoid calling toString() on String objects; this is unnecessary.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:48:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/pi/marketplace/web/PasswordRecovery.java:48:	This statement may have some unnecessary parentheses
+src/main/java/pi/marketplace/web/PasswordRecovery.java:48:	Useless parentheses.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:48:	Useless parentheses.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:50:	This statement may have some unnecessary parentheses
+src/main/java/pi/marketplace/web/PasswordRecovery.java:50:	Useless parentheses.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:50:	Useless parentheses.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:53:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:55:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/pi/marketplace/web/PasswordRecovery.java:55:	This statement may have some unnecessary parentheses
+src/main/java/pi/marketplace/web/PasswordRecovery.java:55:	Useless parentheses.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:55:	Useless parentheses.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:61:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:64:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/pi/marketplace/web/PasswordRecovery.java:64:	This statement may have some unnecessary parentheses
+src/main/java/pi/marketplace/web/PasswordRecovery.java:64:	Useless parentheses.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:64:	Useless parentheses.
+src/main/java/pi/marketplace/web/PasswordRecovery.java:69:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:73:	Parameter 'email' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/PasswordRecovery.java:73:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:77:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:81:	Parameter 'keygeneString' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/PasswordRecovery.java:81:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:85:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/PasswordRecovery.java:89:	Parameter 'key' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/PasswordRecovery.java:89:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:16:	headerCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:21:	Use explicit scoping instead of the default package private level
+src/main/java/pi/marketplace/web/Resgistration.java:22:	Avoid excessively long variable names like userManagmentLocal
+src/main/java/pi/marketplace/web/Resgistration.java:22:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/pi/marketplace/web/Resgistration.java:22:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:24:	Avoid unnecessary constructors - the compiler will generate these for you
+src/main/java/pi/marketplace/web/Resgistration.java:24:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:28:	Avoid using redundant field initializer for 'email'
+src/main/java/pi/marketplace/web/Resgistration.java:28:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/pi/marketplace/web/Resgistration.java:28:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:29:	Avoid using redundant field initializer for 'password'
+src/main/java/pi/marketplace/web/Resgistration.java:29:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/pi/marketplace/web/Resgistration.java:29:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:30:	Avoid using redundant field initializer for 'password2'
+src/main/java/pi/marketplace/web/Resgistration.java:30:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/pi/marketplace/web/Resgistration.java:30:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:31:	Avoid using redundant field initializer for 'firstName'
+src/main/java/pi/marketplace/web/Resgistration.java:31:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/pi/marketplace/web/Resgistration.java:31:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:32:	Avoid using redundant field initializer for 'lastName'
+src/main/java/pi/marketplace/web/Resgistration.java:32:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/pi/marketplace/web/Resgistration.java:32:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:33:	Avoid using redundant field initializer for 'phoneNumber'
+src/main/java/pi/marketplace/web/Resgistration.java:33:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/pi/marketplace/web/Resgistration.java:33:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:34:	Avoid using redundant field initializer for 'adress'
+src/main/java/pi/marketplace/web/Resgistration.java:34:	Fields should be declared at the top of the class, before any method declarations, constructors, initializers or inner classes.
+src/main/java/pi/marketplace/web/Resgistration.java:34:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:36:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:40:	Parameter 'password2' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:40:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:44:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:48:	Parameter 'email' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:48:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:52:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:56:	Parameter 'password' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:56:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:60:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:64:	Parameter 'firstName' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:64:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:68:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:72:	Parameter 'lastName' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:72:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:76:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:80:	Parameter 'phoneNumber' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:80:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:84:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:88:	Parameter 'adress' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:88:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:92:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Resgistration.java:93:	Found 'DD'-anomaly for variable 'navto' (lines '93'-'103').
+src/main/java/pi/marketplace/web/Resgistration.java:95:	Local variable 'tmpuser' could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:96:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Resgistration.java:97:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Resgistration.java:98:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Resgistration.java:99:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Resgistration.java:100:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Resgistration.java:101:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Resgistration.java:105:	Local variable 'msg' could be declared final
+src/main/java/pi/marketplace/web/Resgistration.java:106:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:19:	Each class should declare at least one constructor
+src/main/java/pi/marketplace/web/Transaction.java:19:	headerCommentRequirement Required
+src/main/java/pi/marketplace/web/Transaction.java:26:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/pi/marketplace/web/Transaction.java:26:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Transaction.java:27:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Transaction.java:28:	Avoid using redundant field initializer for 'sold'
+src/main/java/pi/marketplace/web/Transaction.java:28:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Transaction.java:30:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Transaction.java:33:	Local variable 'url' could be declared final
+src/main/java/pi/marketplace/web/Transaction.java:34:	Local variable 'genreJson' could be declared final
+src/main/java/pi/marketplace/web/Transaction.java:35:	Local variable 'json' could be declared final
+src/main/java/pi/marketplace/web/Transaction.java:36:	Avoid using Literals in Conditional Statements
+src/main/java/pi/marketplace/web/Transaction.java:36:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:37:	Local variable 'transaction' could be declared final
+src/main/java/pi/marketplace/web/Transaction.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:39:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:39:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:39:	The String literal "transaction" appears 4 times in this file; the first occurrence is on line 39
+src/main/java/pi/marketplace/web/Transaction.java:40:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:40:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:40:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:40:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:41:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:41:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:41:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:41:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:42:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:42:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:42:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:42:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:43:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Transaction.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:43:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:46:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:47:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/pi/marketplace/web/Transaction.java:47:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:47:	These nested if statements could be combined
+src/main/java/pi/marketplace/web/Transaction.java:49:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/pi/marketplace/web/Transaction.java:49:	This statement may have some unnecessary parentheses
+src/main/java/pi/marketplace/web/Transaction.java:49:	Useless parentheses.
+src/main/java/pi/marketplace/web/Transaction.java:49:	Useless parentheses.
+src/main/java/pi/marketplace/web/Transaction.java:53:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/pi/marketplace/web/Transaction.java:58:	Avoid printStackTrace(); use a logger call instead.
+src/main/java/pi/marketplace/web/Transaction.java:58:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:61:	Avoid printStackTrace(); use a logger call instead.
+src/main/java/pi/marketplace/web/Transaction.java:61:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/Transaction.java:66:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Transaction.java:70:	Parameter 'hash' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Transaction.java:70:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Transaction.java:74:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Transaction.java:78:	Parameter 'sold' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Transaction.java:78:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:10:	Avoid unused imports such as 'javax.validation.constraints.Null'
+src/main/java/pi/marketplace/web/Usermanagment.java:16:	Each class should declare at least one constructor
+src/main/java/pi/marketplace/web/Usermanagment.java:16:	headerCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:18:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/pi/marketplace/web/Usermanagment.java:18:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:24:	Avoid using redundant field initializer for 'emailString'
+src/main/java/pi/marketplace/web/Usermanagment.java:24:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:25:	Avoid using redundant field initializer for 'passwordStrin'
+src/main/java/pi/marketplace/web/Usermanagment.java:25:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:26:	Avoid using redundant field initializer for 'key'
+src/main/java/pi/marketplace/web/Usermanagment.java:26:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:27:	Avoid using redundant field initializer for 'keygenerated'
+src/main/java/pi/marketplace/web/Usermanagment.java:27:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/pi/marketplace/web/Usermanagment.java:27:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:28:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:31:	Parameter 'emailString' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Usermanagment.java:31:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:34:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:37:	Parameter 'passwordStrin' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Usermanagment.java:37:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:40:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:43:	Parameter 'key' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/Usermanagment.java:43:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:46:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:48:	Avoid if (x != y) ..; else ..;
+src/main/java/pi/marketplace/web/Usermanagment.java:49:	System.out.println is used
+src/main/java/pi/marketplace/web/Usermanagment.java:50:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/pi/marketplace/web/Usermanagment.java:53:	Local variable 'msg' could be declared final
+src/main/java/pi/marketplace/web/Usermanagment.java:54:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/Usermanagment.java:61:	Method names should not start with capital letters
+src/main/java/pi/marketplace/web/Usermanagment.java:61:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/Usermanagment.java:62:	Avoid using if statements without curly braces
+src/main/java/pi/marketplace/web/Usermanagment.java:63:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/pi/marketplace/web/Usermanagment.java:63:	This statement may have some unnecessary parentheses
+src/main/java/pi/marketplace/web/Usermanagment.java:63:	Useless parentheses.
+src/main/java/pi/marketplace/web/Usermanagment.java:63:	Useless parentheses.
+src/main/java/pi/marketplace/web/dockerApi/DockerController.java:1:	Package name contains upper case characters
+src/main/java/pi/marketplace/web/dockerApi/DockerController.java:12:	Each class should declare at least one constructor
+src/main/java/pi/marketplace/web/dockerApi/DockerController.java:12:	headerCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerController.java:17:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerController.java:18:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:1:	Package name contains upper case characters
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:11:	headerCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:12:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:13:	fieldCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:15:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:19:	Parameter 'containers' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:19:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:27:	Found 'UR'-anomaly for variable 'c' (lines '27'-'37').
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:27:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:29:	Local variable 'dockerController' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:30:	Local variable 'client' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:31:	Local variable 'containers' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:31:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:31:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:31:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:31:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:31:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:35:	Local variable 'c' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:36:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:37:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:38:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:39:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:40:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:41:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:42:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:43:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:48:	Comment is too large: Too many lines
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:64:	Avoid variables with short names like Id
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:64:	Found 'UR'-anomaly for variable 'c' (lines '64'-'69').
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:64:	Method names should not start with capital letters
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:64:	Parameter 'Id' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:64:	Variables should start with a lowercase character, 'Id' starts with uppercase character.
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:64:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:66:	Local variable 'dockerController' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:67:	Found 'DU'-anomaly for variable 'client' (lines '67'-'75').
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:67:	Local variable 'client' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:68:	Local variable 'c' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:71:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:71:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:72:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:80:	Avoid variables with short names like Id
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:80:	Found 'UR'-anomaly for variable 'c' (lines '80'-'85').
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:80:	Method names should not start with capital letters
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:80:	Parameter 'Id' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:80:	Variables should start with a lowercase character, 'Id' starts with uppercase character.
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:80:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:82:	Local variable 'dockerController' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:83:	Found 'DU'-anomaly for variable 'client' (lines '83'-'91').
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:83:	Local variable 'client' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:84:	Local variable 'c' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:87:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:87:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:88:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:96:	Avoid variables with short names like Id
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:96:	Found 'UR'-anomaly for variable 'c' (lines '96'-'101').
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:96:	Method names should not start with capital letters
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:96:	Parameter 'Id' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:96:	Variables should start with a lowercase character, 'Id' starts with uppercase character.
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:96:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:98:	Local variable 'dockerController' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:99:	Found 'DU'-anomaly for variable 'client' (lines '99'-'111').
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:99:	Local variable 'client' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:100:	Local variable 'c' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:103:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:103:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:104:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:113:	Comment is too large: Too many lines
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:126:	Found 'UR'-anomaly for variable 'i' (lines '126'-'132').
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:126:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:128:	Local variable 'dockerController' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:129:	Local variable 'client' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:130:	Local variable 'images' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:130:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:130:	Potential violation of Law of Demeter (object not created locally)
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:131:	Local variable 'i' could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:132:	System.out.printf is used
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:139:	publicMethodCommentRequirement Required
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:143:	Parameter 'images' is not assigned and could be declared final
+src/main/java/pi/marketplace/web/dockerApi/DockerService.java:143:	publicMethodCommentRequirement Required
+src/main/java/rest/InscriptionManagerRest.java:18:	Each class should declare at least one constructor
+src/main/java/rest/InscriptionManagerRest.java:18:	headerCommentRequirement Required
+src/main/java/rest/InscriptionManagerRest.java:20:	Use explicit scoping instead of the default package private level
+src/main/java/rest/InscriptionManagerRest.java:21:	Avoid excessively long variable names like userManagmentLocal
+src/main/java/rest/InscriptionManagerRest.java:21:	Found non-transient, non-static member. Please mark as transient or provide accessors.
+src/main/java/rest/InscriptionManagerRest.java:21:	fieldCommentRequirement Required
+src/main/java/rest/InscriptionManagerRest.java:25:	Parameter 'tmpuser' is not assigned and could be declared final
+src/main/java/rest/InscriptionManagerRest.java:25:	publicMethodCommentRequirement Required
+src/main/java/rest/InscriptionManagerRest.java:27:	Avoid using if statements without curly braces
+src/main/java/rest/InscriptionManagerRest.java:28:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/rest/InscriptionManagerRest.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/rest/InscriptionManagerRest.java:28:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/rest/InscriptionManagerRest.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/rest/InscriptionManagerRest.java:29:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/rest/InscriptionManagerRest.java:32:	JUnit 4 tests that execute tests should use the @Test annotation
+src/main/java/rest/InscriptionManagerRest.java:34:	Parameter 'keyString' is not assigned and could be declared final
+src/main/java/rest/InscriptionManagerRest.java:34:	publicMethodCommentRequirement Required
+src/main/java/rest/InscriptionManagerRest.java:36:	Avoid unnecessary comparisons in boolean expressions
+src/main/java/rest/InscriptionManagerRest.java:36:	Avoid using if statements without curly braces
+src/main/java/rest/InscriptionManagerRest.java:37:	A method should have only one exit point, and that should be the last statement in the method
+src/main/java/rest/InscriptionManagerRest.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/rest/InscriptionManagerRest.java:37:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/rest/InscriptionManagerRest.java:38:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/rest/InscriptionManagerRest.java:38:	Potential violation of Law of Demeter (method chain calls)
+src/main/java/rest/RestActivator.java:7:	Each class should declare at least one constructor
+src/main/java/rest/RestActivator.java:7:	headerCommentRequirement Required

@@ -34,6 +34,7 @@ public class UserManagment implements UserManagmentLocal {
 	public UserManagment() {
 		// TODO Auto-generated constructor stub
 	}
+	
 
 	/***
 	 * add user to the database
@@ -68,7 +69,8 @@ public class UserManagment implements UserManagmentLocal {
 		}
 		tmpuser.setPrivatekey(key);
 		email.send(tmpuser.getEmail(), "Market place registration",
-				"hello \n thank your for registratiion in our serverice \n In order to confirm your account please click on the link\n http://127.0.0.1:18080/marketplace-web/api/inscription/" + key);
+				"hello \n thank your for registratiion in our serverice \n In order to confirm your account please click on the link\n http://127.0.0.1:18080/marketplace-web/api/inscription/"
+						+ key);
 		em.persist(tmpuser);
 		return true;
 
@@ -105,6 +107,44 @@ public class UserManagment implements UserManagmentLocal {
 	public boolean updateUser(Users users) {
 		em.merge(users);
 		return true;
+	}
+
+	@Override
+	public boolean updatepassword(String email, String password) {
+		Users user = new Users();
+		user = em.find(Users.class, email);
+		if (user != null) {
+			try {
+				user.setPassword(hashfunction.hash(password));
+			} catch (NoSuchAlgorithmException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+			return (updateUser(user));
+		}
+		return false;
+	}
+
+	@Override
+	public String sendtoken(String emailString) {
+		Users user = new Users();
+		user = em.find(Users.class, emailString);
+		if (user != null) {
+			String key = UUID.randomUUID().toString();
+			email.send(user.getEmail(), "Password Recover", "Dear " + user.getFirstName() + " " + user.getLastName()
+					+ "\n\n In order to change yourpassword enter this key\n " + key);
+			return key;
+		}
+
+		return null;
+	}
+
+	@Override
+	public boolean isUser(String emailString) {
+		if (em.find(Users.class, emailString) != null)
+			return true;
+		return false;
 	}
 
 }

@@ -3,8 +3,11 @@ package pi.marketplace.web;
 import java.io.Serializable;
 
 import javax.ejb.EJB;
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.FacesContext;
+import javax.validation.constraints.Null;
 
 import services.Authentication;
 
@@ -18,10 +21,10 @@ public class Usermanagment  implements Serializable{
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	private String emailString="";
-	private String passwordStrin="";
-	private static  String key="";
-	private String keygenerated="";
+	private String emailString=null;
+	private String passwordStrin=null;
+	private static  String key=null;
+	private String keygenerated=null;
 	public String getEmailString() {
 		return emailString;
 	}
@@ -46,11 +49,18 @@ public class Usermanagment  implements Serializable{
 			{System.out.println(keygenerated);
 			return "secondFactor.jsf";
 			}
-		return "error.jsf";
+		else {
+			FacesMessage msg = new FacesMessage("bad credentials");
+			FacesContext.getCurrentInstance().addMessage("from_login:login", msg);
+			return "";
+			
+		}
+		
+		
 	}
 	public String Second(){
 		if (key.equals(keygenerated))
-			return ("dashboard.jsf");
+			return ("dashboard.jsf?faces-redirect=true");
 		return "";
 	}
 	

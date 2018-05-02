@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+	
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<link rel="stylesheet" href="../resources/stylecss.css" type="text/css" />
+	   <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+	<link rel="stylesheet" href="../resources/style.css" type="text/css" />
+	<link href="../resources/index/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="../resources/index/css/animate.min.css" rel="stylesheet" /> 
+  <link href="../resources/index/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="../resources/index/css/lightbox.css" rel="stylesheet" />
+  <link href="../resources/index/css/main.css" rel="stylesheet" />
+  <link id="css-preset" href="../resources/index/css/presets/preset1.css" rel="stylesheet" />
+  <link href="../resources/index/css/responsive.css" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="../resources/index/images/favicon.ico" />
+	
+</head>
+
+<h:head>
+
+<title>MarketPlace</title> 
+
+</h:head>
+
+<h:body>
+    <h:form id="CreateNewImage" class="form-horizontal">
+        <div class="form-group">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h2> <center> Add New Images </center> </h2>
+            </div>
+        </div>
+        <hr/>
+        <div class="form-group">
+            <h:outputLabel for="name" class="control-label col-sm-4">Image name:</h:outputLabel>
+            <div class="col-sm-4">
+                <h:inputText id="name" value="#{localimagesManagmentBean.iname}" class="form-control" validatorMessage="Name is required">
+						<!--  <f:validateLength minimum="5" maximum="20" />
+						<f:validateRequired /> -->			
+				</h:inputText>
+             
+            </div>
+        </div>
+        <div class="form-group">
+            <h:outputLabel for="description" class="control-label col-sm-4">Description :</h:outputLabel>
+            <div class="col-sm-4">
+                <h:inputText id="description" value="#{localimagesManagmentBean.idescription}" class="form-control" validatorMessage="Description is required">
+                <!--   <f:validateLength minimum="5" maximum="10" />
+                    <h:message for="description" style="color:red" /> -->   
+                    
+                </h:inputText>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="col-sm-2">
+                    <h:commandButton id="btn" value="Save" action="#{localimagesManagmentBean.UpdateImage()}" class="btn btn-success btnWidth" />
+                    <h:message for="btn" style="color:red" />
+                </div>
+                <div class="col-sm-1">
+                </div>
+                <div class="col-sm-2">
+                    <h:link outcome="showImages.xhtml?faces-redirect=true" value="View Images List" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
+    </h:form>
+      
+    
+</h:body>
+</html>

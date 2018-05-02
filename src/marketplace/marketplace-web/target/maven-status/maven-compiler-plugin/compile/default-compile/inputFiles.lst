@@ -1,7 +1,14 @@
 D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\rest\RestActivator.java
-D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\pi\marketplace\web\Resgistration.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\pi\marketplace\web\PasswordRecovery.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\com\Marketplace\AzureApp\InstanceManagment.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\com\Marketplace\web\LocalimagesManagmentBean.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\com\Marketplace\web\rest\notificationAPI.java
 D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\pi\marketplace\web\Transaction.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\pi\marketplace\web\Usermanagment.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\com\Marketplace\AzureApp\CreateVM.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\pi\marketplace\web\Resgistration.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\com\Marketplace\web\NotificationBean.java
 D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\pi\marketplace\web\dockerApi\DockerController.java
 D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\pi\marketplace\web\dockerApi\DockerService.java
-D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\pi\marketplace\web\Usermanagment.java
+D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\com\Marketplace\web\rest\LocalimageApi.java
 D:\4NIDS\semestre_2\marketPlace\Marketplace\src\marketplace\marketplace-web\src\main\java\rest\InscriptionManagerRest.java
